@@ -1,6 +1,7 @@
-var car = {
-	type: "hyundai",
-	year: 2016
-}
-
-console.log(car);
+document.addEventListener('DOMContentLoaded', function() {
+    var canvas = document.getElementById('pong');
+    if (canvas.getContext) {
+        var ctx = canvas.getContext('2d');
+        var game = new Game(6, ctx, canvas);
+    }
+});
